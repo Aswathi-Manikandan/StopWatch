@@ -1,38 +1,89 @@
-.App {
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('F:\REACT-PRACTICE\STOP WATCH\stopwatch\src\alarm.jpg'); 
+  background-size: cover;
+  background-position: center;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.stopwatch {
+  background: rgba(255, 255, 255, 0.1); 
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px); 
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  text-align: center;
+  width: 350px;
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 svg {
+  margin-right: 10px; 
+  font-size: 40px;
+}
+
+.time-display {
+  font-size: 48px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.time-display span {
+  display: inline-block;
+  width: 70px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.buttons button {
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button:nth-child(1) {
+  background-color: rgba(217, 83, 79, 0.8); /* Semi-transparent red */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button:nth-child(2) {
+  background-color: rgba(92, 184, 92, 0.8); /* Semi-transparent green */
 }
 
-.App-link {
-  color: #61dafb;
+button:nth-child(3) {
+  background-color: rgba(2, 117, 216, 0.8); /* Semi-transparent blue */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+  opacity: 0.9;
+}
+
+button:focus {
+  outline: none;
 }
